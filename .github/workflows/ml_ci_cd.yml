@@ -43,7 +43,7 @@ jobs:
       run: sed -i 's/{model_name}/${{secrets.MODEL_NAME}}/g' manifest/fastapi.yml
 
     - name: update _ by - 
-      run: sed -i 's/_/-/g' manifests/fastapi.yml
+      run: sed -i 's/_/-/g' manifest/fastapi.yml
 
     - name: update sha in k8
       run: sed -i 's/{github.sha}/${{github.event.client_payload.sha }}/g' manifest/fastapi.yml
