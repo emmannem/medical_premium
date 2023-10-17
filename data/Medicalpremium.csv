@@ -1,4 +1,4 @@
-age,diabetes,bloodpressureproblems,anytransplants,anychronicdiseases,height,weight,knownallergies,historyofcancerinfamily,numberofmajorsurgeries,premiumprice
+Age,Diabetes,BloodPressureProblems,AnyTransplants,AnyChronicDiseases,Height,Weight,KnownAllergies,HistoryOfCancerInFamily,NumberOfMajorSurgeries,PremiumPrice
 45,0,0,0,0,155,57,0,0,0,25000
 60,1,0,0,0,180,73,0,0,0,29000
 36,1,1,0,0,158,59,0,0,1,23000

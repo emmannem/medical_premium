@@ -17,7 +17,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = load(pathlib.Path('model/medical-premium-v1.joblib'))
+model = load(pathlib.Path('model/Medicalpremium-v1.joblib'))
 
 
 class InputData(BaseModel):

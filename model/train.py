@@ -6,8 +6,8 @@ from joblib import dump
 import pandas as pd
 import pathlib
 
-df = pd.read_csv(pathlib.Path('data/medical-premium.csv'))
-y = df.pop('premiumprice')
+df = pd.read_csv(pathlib.Path('data/Medicalpremium.csv'))
+y = df.pop('PremiumPrice')
 X = df
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.2)
 
@@ -18,4 +18,4 @@ clf = RandomForestClassifier(n_estimators = 10,
 clf.fit(X_train, y_train)
 print ('Saving model..')
 
-dump(clf, pathlib.Path('model/medicalpremium-v1.joblib'))
+dump(clf, pathlib.Path('model/Medicalpremium-v1.joblib'))
